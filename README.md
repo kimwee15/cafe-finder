@@ -41,7 +41,7 @@ Coming soon.
 
 ## 📸 Screenshot
 
-Coming soon.
+![CafeFinder Screenshot](screenshot.png)
 
 ## 🔮 Future Improvements
 
