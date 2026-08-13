@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CafeFinder</title>
+    <!-- Leaflet CSS -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div>
+            <h1>☕ CafeFinder</h1>
+
+            <p>
+                Discover great coffee near you.
+            </p>
+        </div>
+
+        <button id="locationBtn">
+            📍 Find Cafes Near Me
+        </button>
+
+    </header>
+
+
+    <main class="app">
+
+        <section class="sidebar">
+
+            <div class="sidebar-header">
+                <h2>Nearby Cafes</h2>
+
+                <p id="status">
+                    Click "Find Cafes Near Me" to begin.
+                </p>
+        
+                <div class="controls">
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="🔍 Search cafes..."
+                    >
+
+                    <select id="sortSelect">
+                        <option value="nearest">
+                            Sort: Nearest
+                        </option>
+
+                        <option value="name">
+                            Sort: Name A-Z
+                        </option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div id="cafeList" class="cafe-list"></div>
+
+        </section>
+
+
+        <section id="map"></section>
+
+    </main>
+
+
+    <!-- Leaflet JavaScript -->
+    <script
+        src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""
+    ></script>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
