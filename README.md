@@ -37,7 +37,7 @@ Users can search and sort cafes, save favourites locally, focus cafes on the map
 
 ## 🌐 Live Demo
 
-Coming soon.
+https://kimwee15.github.io/cafe-finder/
 
 ## 📸 Screenshot
 
