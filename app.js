@@ -755,25 +755,6 @@ function displayCafes(cafes) {
 
     });
 }
-            // -----------------------------
-            // Create map marker
-            // -----------------------------
-
-            const marker =
-                L.marker([
-                    cafeLat,
-                    cafeLon
-                ]);
-
-
-            marker.bindPopup(
-                `<strong>${escapeHTML(name)}</strong>
-                 <br>
-                 ${escapeHTML(address)}`
-            );
-
-
-            marker.addTo(cafeLayer);
 
 // ----------------------------------------
 // Favourite cafes
